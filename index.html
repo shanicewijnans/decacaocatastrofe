@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>De Cacao Catastrofe</title>
+    <link href="https://db.onlinewebfonts.com/c/8f99df3b140b4b98bb4b3963cc850c64?family=Girdo+Black" rel="stylesheet">
+    <link href="https://db.onlinewebfonts.com/c/860c3ec7bbc5da3e97233ccecafe512e?family=Circular+Std+Book"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <main>
+        <img class="background-video" src="assets/Background.gif" alt="">
+        <div class="introOutro intro-1">
+            <p class="geluid">Voor de optimale ervaring raden wij aan deze website op Chrome, met geluid te bezoeken.
+            </p>
+            <h1>Wanneer heb jij voor het laatst nog een stukje chocolade gegeten? </h1>
+
+            <img class="pijltje" src="assets/pijl.svg" alt="pijl">
+            <svg xmlns="http://www.w3.org/2000/svg" version="1.1">
+                <defs>
+                    <filter id="squiggly-0">
+                        <feTurbulence id="turbulence" baseFrequency="0.02" numOctaves="3" result="noise" seed="0" />
+                        <feDisplacementMap id="displacement" in="SourceGraphic" in2="noise" scale="6" />
+                    </filter>
+                    <filter id="squiggly-1">
+                        <feTurbulence id="turbulence" baseFrequency="0.02" numOctaves="3" result="noise" seed="1" />
+                        <feDisplacementMap in="SourceGraphic" in2="noise" scale="8" />
+                    </filter>
+
+                    <filter id="squiggly-2">
+                        <feTurbulence id="turbulence" baseFrequency="0.02" numOctaves="3" result="noise" seed="2" />
+                        <feDisplacementMap in="SourceGraphic" in2="noise" scale="6" />
+                    </filter>
+                    <filter id="squiggly-3">
+                        <feTurbulence id="turbulence" baseFrequency="0.02" numOctaves="3" result="noise" seed="3" />
+                        <feDisplacementMap in="SourceGraphic" in2="noise" scale="8" />
+                    </filter>
+
+                    <filter id="squiggly-4">
+                        <feTurbulence id="turbulence" baseFrequency="0.02" numOctaves="3" result="noise" seed="4" />
+                        <feDisplacementMap in="SourceGraphic" in2="noise" scale="6" />
+                    </filter>
+                </defs>
+            </svg>
+        </div>
+
+
+
+        <div class="introOutro intro-2">
+            <button class="backButton" onclick="resetScene()">
+                <img src="assets/backButton.png" alt="">
+            </button>
+            <h1>Gemiddeld consumeert een Nederlander jaarlijks ongeveer 4,5 kilo chocolade. Nederland staat wereldwijd
+                op de 13e plek van grootste chocoladeconsumenten.
+            </h1>
+            <img class="pijltje" src="assets/pijl.svg" alt="pijl">
+        </div>
+
+        <div class="introOutro intro-3">
+            <button class="backButton" onclick="resetScene()">
+                <img src="assets/backButton.svg" alt="">
+            </button>
+            <h1>Weet je wat er allemaal nodig is om jouw stukje chocolade te maken?</h1>
+            <h2>Ontdek wat er achter elke hap schuilt!</h2>
+            <img class="pijltje" src="assets/pijl.svg" alt="pijl">
+        </div>
+
+        <div class="boot-heen">
+            <video autoplay>
+                <source
+                    src="https://player.vimeo.com/progressive_redirect/playback/1052603135/rendition/1080p/file.mp4?loc=external&signature=5e1d96368bb2f7059dd6478d4b19b84821de865eb23e613b101e91a658db94d4"
+                    type="video/mp4">
+            </video>
+        </div>
+        <script src="https://player.vimeo.com/api/player.js"></script>
+        </div>
+
+        <div id="ivoorkust" class="ivoorkust">
+            <button class="backButton" onclick="resetScene()">
+                <img src="assets/backButton.svg" alt="">
+            </button>
+            <div class="slechteInkomst">
+                <audio id="audio1" src="assets/audio/kinderen.mp3"></audio>
+                <div class="ivoorkustImg">
+                    <img class="relative" src="assets/familie.svg" alt="voetballende kinderen">
+                    <img class="open open1" src="assets/kinderen.svg" alt="voetballende kinderen">
+                    <h2 class="ivoorkustTekst">Scroll door het verhaal en klik op de gekleurde elementen om meer te
+                        ontdekken!</h2>
+                </div>
+
+                <dialog class="modalVideo">
+                    <img class="kruisje" src="assets/kruisje.svg" alt="kruisje">
+                    <video autoplay>
+                        <source
+                            src="https://player.vimeo.com/progressive_redirect/playback/1051615597/rendition/1080p/file.mp4?loc=external&signature=23aa6b64e9d6fccf4ae8493e3b308019c7f24b53bb99cbba802ceb88adcf3c55"
+                            type="video/mp4">
+                    </video>
+                </dialog>
+            </div>
+
+            <div class="kinderarbeid">
+                <audio id="audio7" src="assets/audio/Kinderarbeid.mp3"></audio>
+                <div class="ivoorkustImg">
+                    <img class="relative" src="assets/kinderarbeid.svg" alt="kinderarbeid">
+                    <img class="open open2" src="assets/kinderarbeidKlik.svg" alt="kinderarbeid">
+                </div>
+
+                <dialog class="modalVideo">
+                    <img class="kruisje" src="assets/kruisje.svg" alt="kruisje">
+                    <video autoplay>
+                        <source
+                            src="https://player.vimeo.com/progressive_redirect/playback/1052610788/rendition/1080p/file.mp4?loc=external&signature=833779d827060f26767973d27cc268c1da20017683a7fbbb31834f36366e24ab"
+                            type="video/mp4">
+                    </video>
+                </dialog>
+            </div>
+
+            <div class="fairtrade">
+                <div class="ivoorkustImg">
+                    <audio id="audio6" src="assets/audio/Winkel.mp3"></audio>
+                    <img class="relative" src="assets/winkel.svg" alt="fairtrade winkel">
+                    <img class="open open3" src="assets/fairtradeZak.svg" alt="fairtrade zak">
+                    <img class="open open4" src="assets/utz.svg" alt="UTZ logo">
+                    <img class="open open5" src="assets/fairtradeLogo.svg" alt="Fairtrade logo">
+                </div>
+
+                <dialog class="modalVideo">
+                    <img class="kruisje" src="assets/kruisje.svg" alt="kruisje">
+                    <video id="video" autoplay>
+                        <source
+                            src="https://player.vimeo.com/progressive_redirect/playback/1050730750/rendition/1080p/file.mp4?loc=external&signature=eb6cd5f095f24fd24d57c8bda546cb7c8390f0af9503068ec6fa6adb4156f91b"
+                            type="video/mp4">
+                    </video>
+                </dialog>
+
+                <dialog class="modalBron">
+                    <img class="kruisje" src="assets/kruisje.svg" alt="kruisje">
+                    <div class="flex">
+                        <div class="flexText">
+                            <h2>Fairtrade</h2>
+                            <p>Fairtrade focust zich op eerlijke prijzen en goede werkomstandigheden voor boeren.
+                            </p>
+                        </div>
+                        <img src="assets/fairtradeLogo.svg" alt="Fairtrade logo">
+                    </div>
+                    <div class="center bio">
+                        <h2>Biologisch</h2>
+                        <p>Biologische chocolade word gemaakt van ingrediënten die op biologische wijze geteeld zijn op
+                            een biologisch gecertifceerde boerderij. Hier gebruiken ze geen pesticiden en staan
+                            traceerbaarheid en transparantie voorop.
+                        </p>
+                    </div>
+                    <div class="flex">
+                        <img src="assets/utz.svg" alt="UTZ logo">
+                        <div class="flexText">
+                            <h2>Rainforest Alliance (UTZ)</h2>
+                            <p>Rainforest Alliance (UTZ) zette zich in het verleden vooral in voor natuurbehoud, milieu
+                                en duurzaamheid. Sinds de samenvoeging van Rainforest Alliance en UTZ in 2018 zijn daar
+                                ook nog efficiënte landbouw en betere levensomstandigheden
+                                bij gekomen.</p>
+                        </div>
+                    </div>
+                    <div class="center">
+                        <p>In 2016 was 66% van de cacao in Nederlandse supermarkten zichtbaar duurzaam gecertificeerd,
+                            een flinke stijging ten opzichte van 58% in 2015. Dit betreft cacao met keurmerken zoals
+                            Rainforest Alliance, UTZ (nu samengevoegd), Fairtrade
+                            en biologisch, die consumenten zekerheid bieden over duurzaamheid.</p>
+                        <h2 class="grafiekTitel">Afzet van duurzame cacao in de supermarkten</h2>
+                        <div class="infoGrafiek">
+                            <p>2014</p>
+                            <p>2015</p>
+                            <p>2016</p>
+                        </div>
+                        <div class="grafiek">
+                            <img src="assets/cirkel2014.svg" alt="cirkelgrafiek">
+                            <img src="assets/cirkel2015.svg" alt="cirkelgrafiek">
+                            <img src="assets/cirkel2016.svg" alt="cirkelgrafiek">
+                        </div>
+                        <div class="infoGrafiek">
+                            <img src="assets/cirkellegenda.svg" alt="cirkel legenda">
+                        </div>
+                        <p class="margin">Wereldwijd is het aanbod van duurzaam gecertificeerde cacao groter dan de
+                            vraag. Een uitdaging hierbij is dat aanzienlijk deel van de cacao meerdere certificeringen
+                            heeft, bijvoorbeeld zowel Fairtrade als Rainforest Alliance. Hierdoor
+                            wordt dezelfde cacao soms dubbel of zelfs drievoudig meegeteld.</p>
+                        <p>Omdat vaak onduidelijk is hoe groot deze overlap precies is, blijft de werkelijke hoeveelheid
+                            duurzaam geproduceerde cacao onzeker.</p>
+                    </div>
+                </dialog>
+
+                <dialog class="modalVideo">
+                    <img class="kruisje" src="assets/kruisje.svg" alt="kruisje">
+                    <video id="video" autoplay>
+                        <source
+                            src="https://player.vimeo.com/progressive_redirect/playback/1050729302/rendition/1080p/file.mp4?loc=external&signature=3fc2ff557b38f29c918a6e84d75c676c00ef679d0f70f01d4a282a4bafbaf01c"
+                            type="video/mp4">
+                    </video>
+                </dialog>
+            </div>
+
+            <div class="ontbossing">
+                <audio id="audio5" src="assets/audio/Ontbossing.mp3"></audio>
+                <div class="ivoorkustImg">
+                    <img class="relative" src="assets/ontbossing.svg" alt="ontbossing">
+                    <img class="open open6" src="assets/ontbossingPersoon.svg" alt="Persoon die sprayed">
+                    <img class="open open9" src="assets/boom.svg" alt="boom">
+                </div>
+
+                <dialog class="modalVideo">
+                    <img class="kruisje" src="assets/kruisje.svg" alt="kruisje">
+                    <video autoplay>
+                        <source
+                            src="https://player.vimeo.com/progressive_redirect/playback/1049602193/rendition/1080p/file.mp4?loc=external&signature=9f7e4a2ab5dd584c3a4998892ae7aa94c45b5e76dc0fd65b83243eb530b77333"
+                            type="video/mp4">
+                    </video>
+                </dialog>
+
+                <dialog class="modalBron">
+                    <img class="kruisje" src="assets/kruisje.svg" alt="kruisje">
+                    <div class="center">
+                        <p>Nederland is de op een na grootste importeur in Europa van producten die bijdragen aan
+                            ontbossing: iets waaronder ook cacao valt. Ontbossing en verbranding van bos leiden tot een
+                            toename van broeikasgasemissies. Door het toenemen
+                            van deze emissies en het verlies van biodiversiteit zorgt ontbossing voor
+                            klimaatverandering, aldus de Europese comissie.</p>
+                        <h2 class="grafiekTitel">Nederlandse Import van Ontbossings-Gerelateerde Goederen</h2>
+                        <img class="ontbossingGrafiek" src="assets/ontbossingsgrafiek.svg"
+                            alt="grafiek over ontbossing">
+                    </div>
+                </dialog>
+            </div>
+
+            <div class="slechteOogst">
+                <audio id="audio2" src="assets/audio/slechteOogst.mp3"></audio>
+                <div class="ivoorkustImg">
+                    <img class="relative audioTrigger" data-audio="audio1" src="assets/croprot.svg" alt="ziektes">
+                    <img class="open open7" src="assets/ziektesBoom.svg" alt="cacao boom">
+                    <img class="open open8" src="assets/boer.svg" alt="cacao boer">
+                </div>
+
+                <dialog class="modalVideo">
+                    <img class="kruisje" src="assets/kruisje.svg" alt="kruisje">
+                    <video class="fixHeight" autoplay>
+                        <source
+                            src="https://player.vimeo.com/progressive_redirect/playback/1051551712/rendition/1080p/file.mp4?loc=external&signature=24101f90f70ca56427cefbd1c5996e20c2008329615faa5d064a583b2ad4777b"
+                            type="video/mp4">
+                    </video>
+                </dialog>
+
+                <dialog class="modalVideo">
+                    <img class="kruisje" src="assets/kruisje.svg" alt="kruisje">
+                    <video autoplay>
+                        <source
+                            src="https://player.vimeo.com/progressive_redirect/playback/1051551500/rendition/1080p/file.mp4?loc=external&signature=bccfc6fd962a2366ea782dee99b96368d7f41b40e8dcb759b13b1a9a96803951"
+                            type="video/mp4">
+                    </video>
+                </dialog>
+            </div>
+
+            <div class="ivoorkustImg boot">
+                <h2 class="ivoorEind">alles gezien? klik op de boot</h2>
+                <img class="ivoorPijl" src="assets/pijl2.svg" alt="">
+                <h1 class="ivoorkustBegin">Ivoorkust</h1>
+                <audio id="audio3" src="assets/audio/ocean.mp3"></audio>
+                <img class="relative" src="assets/boot.svg" alt="haven">
+                <img class="open10 pijltje" src="assets/bootKleur.svg" alt="boot">
+            </div>
+        </div>
+
+        <div class="boot-terug">
+            <audio id="audio4" src="assets/audio/horn.mp3"></audio>
+            <img class="bootImg" src="assets/BBOOT.svg" alt="">
+            <dialog class="modalVideo">
+                <img class="kruisje" src="assets/kruisje.svg" alt="kruisje">
+                <video autoplay>
+                    <source
+                        src="https://player.vimeo.com/progressive_redirect/playback/1050727021/rendition/1080p/file.mp4?loc=external&signature=f48d51a80205a7c7d7c0b0347d1afd73054612d7e4974eb3d76968a356f98be2"
+                        type="video/mp4">
+                </video>
+            </dialog>
+        </div>
+
+        <div class="introOutro outro-1">
+            <button class="backButton" onclick="resetScene()">
+                <img src="assets/backButton.svg" alt="">
+            </button>
+            <h1>In Europa zijn we oplossingen aan het bedenken om de situatie in landen als Ivoorkust te verbeteren.
+            </h1>
+            <img class="pijltje" src="assets/pijl.svg" alt="pijl">
+        </div>
+
+        <div class="introOutro outro-2">
+            <button class="backButton" onclick="resetScene()">
+                <img src="assets/backButton.svg" alt="">
+            </button>
+            <h1>Zo heeft het Europese Parlement de EUDR wet opgesteld.</h1>
+            <h1>Deze wet zorgt ervoor dat producten die in Europa worden verkocht, niet zijn geproduceerd ten koste van
+                ontbossing of landdegredatie ter plekke.</h1>
+        </div>
+
+        <div class="introOutro outro-3">
+            <button class="backButton" onclick="resetScene()">
+                <img src="assets/backButton.svg" alt="">
+            </button>
+            <h1>Daarnaast moeten bedrijven onderzoeken of ze aan de lokale wetgeving voldoen.</h1>
+            <img class="pijltje" src="assets/pijl.svg" alt="pijl">
+        </div>
+
+        <div class="introOutro outro-4">
+            <button class="backButton" onclick="resetScene()">
+                <img src="assets/backButton.svg" alt="">
+            </button>
+            <h1>Maar hoe zit het met ons als consumenten? Hoe kunnen wij bijdragen aan verandering?</h1>
+            <img class="pijltje" src="assets/pijl.svg" alt="pijl">
+        </div>
+
+        <div class="introOutro outro-5">
+            <button class="backButton" onclick="resetScene()">
+                <img src="assets/backButton.svg" alt="">
+            </button>
+            <h1>Wil jij nu nog wel een stukje?</h1>
+        </div>
+    </main>
+
+    <div class="mobile">
+        <h1>Deze site is geoptimaliseerd voor schermen groter dan 1024px.</h1>
+    </div>
+
+    <script src="js/scripts.js"></script>
+
+    <svg xmlns="http://www.w3.org/2000/svg" version="1.1">
+        <defs>
+            <filter id="squiggly-a">
+                <feTurbulence id="turbulence" baseFrequency="0.02" numOctaves="3" result="noise" seed="0" />
+                <feDisplacementMap id="displacement" in="SourceGraphic" in2="noise" scale="6" />
+            </filter>
+
+            <filter id="squiggly-z">
+                <feTurbulence id="turbulence" baseFrequency="0.02" numOctaves="3" result="noise" seed="1" />
+                <feDisplacementMap id="displacement" in="SourceGraphic" in2="noise" scale="8" />
+            </filter>
+
+            <filter id="squiggly-0">
+                <feTurbulence id="turbulence" baseFrequency="0.02" numOctaves="3" result="noise" seed="0" />
+                <feDisplacementMap id="displacement" in="SourceGraphic" in2="noise" scale="6" />
+            </filter>
+
+            <filter id="squiggly-1">
+                <feTurbulence id="turbulence" baseFrequency="0.02" numOctaves="3" result="noise" seed="1" />
+                <feDisplacementMap in="SourceGraphic" in2="noise" scale="8" />
+            </filter>
+
+            <filter id="squiggly-1a">
+                <feTurbulence id="turbulence" baseFrequency="0.02" numOctaves="3" result="noise" seed="1" />
+                <feDisplacementMap in="SourceGraphic" in2="noise" scale="18" />
+            </filter>
+
+            <filter id="squiggly-2">
+                <feTurbulence id="turbulence" baseFrequency="0.02" numOctaves="3" result="noise" seed="2" />
+                <feDisplacementMap in="SourceGraphic" in2="noise" scale="6" />
+            </filter>
+
+            <filter id="squiggly-3">
+                <feTurbulence id="turbulence" baseFrequency="0.02" numOctaves="3" result="noise" seed="3" />
+                <feDisplacementMap in="SourceGraphic" in2="noise" scale="8" />
+            </filter>
+
+            <filter id="squiggly-3a">
+                <feTurbulence id="turbulence" baseFrequency="0.02" numOctaves="3" result="noise" seed="3" />
+                <feDisplacementMap in="SourceGraphic" in2="noise" scale="18" />
+            </filter>
+
+            <filter id="squiggly-4">
+                <feTurbulence id="turbulence" baseFrequency="0.02" numOctaves="3" result="noise" seed="4" />
+                <feDisplacementMap in="SourceGraphic" in2="noise" scale="6" />
+            </filter>
+        </defs>
+    </svg>
+</body>
+
+</html>
