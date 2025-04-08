@@ -3,7 +3,7 @@ if (scene === null) {
     scene = 0;
     sessionStorage.setItem('scene', scene);
 } else {
-    scene = parseInt(scene, 11);
+    scene = parseInt(scene, 10);
 }
 
 
@@ -94,11 +94,6 @@ function updateScene() {
         setTimeout(() => {
             openDialog('.boot-terug .modalVideo');
         }, 1);
-        setTimeout(() => {
-            scene += 1;
-            sessionStorage.setItem('scene', scene);
-            updateScene();
-        }, 32000);
     } else
     if (scene == 6) {
         document.querySelector('.outro-1').style.display = 'flex';
@@ -115,7 +110,11 @@ function updateScene() {
         document.querySelector('.outro-4').style.display = 'flex';
     } else if (scene == 10) {
         document.querySelector('.outro-5').style.display = 'flex';
-    }
+    } else if (scene == 11) {
+    scene = 1;
+    sessionStorage.setItem('scene', scene);
+    updateScene();
+}
 }
 
 function smoothScrollTo(target, duration) {
@@ -312,6 +311,9 @@ document.addEventListener('DOMContentLoaded', function() {
             });
         }
     });
+
+
+
 
     document.body.addEventListener('wheel', function(event) {
         if (document.body.classList.contains('scroll-lock')) {

@@ -3,36 +3,18 @@
                 -webkit-user-select: none;
             }
             
+            @import url(https://db.onlinewebfonts.com/c/860c3ec7bbc5da3e97233ccecafe512e?family=Circular+Std+Book);
+            @import url(https://db.onlinewebfonts.com/c/8f99df3b140b4b98bb4b3963cc850c64?family=Girdo+Black);
             @font-face {
-                font-family: 'Girdo';
-                src: url('GirdoBlackRegular.woff2') format('woff2'), url('GirdoBlackRegular.woff') format('woff');
-                font-weight: 900;
-                font-style: normal;
-                font-display: swap;
+                font-family: "Circular Std Book";
+                src: url("https://db.onlinewebfonts.com/t/860c3ec7bbc5da3e97233ccecafe512e.eot");
+                src: url("https://db.onlinewebfonts.com/t/860c3ec7bbc5da3e97233ccecafe512e.eot?#iefix")format("embedded-opentype"), url("https://db.onlinewebfonts.com/t/860c3ec7bbc5da3e97233ccecafe512e.woff2")format("woff2"), url("https://db.onlinewebfonts.com/t/860c3ec7bbc5da3e97233ccecafe512e.woff")format("woff"), url("https://db.onlinewebfonts.com/t/860c3ec7bbc5da3e97233ccecafe512e.ttf")format("truetype"), url("https://db.onlinewebfonts.com/t/860c3ec7bbc5da3e97233ccecafe512e.svg#Circular Std Book")format("svg");
             }
             
             @font-face {
-                font-family: 'CircularStd-Book';
-                src: url('CircularStd-Book.woff2') format('woff2'), url('CircularStd-Book.woff') format('woff');
-                font-weight: 500;
-                font-style: normal;
-                font-display: swap;
-            }
-            
-            @font-face {
-                font-family: 'Girdo';
-                src: url('GirdoBlackRegular.woff2') format('woff2'), url('GirdoBlackRegular.woff') format('woff');
-                font-weight: 900;
-                font-style: normal;
-                font-display: swap;
-            }
-            
-            @font-face {
-                font-family: 'Circular Std Book';
-                src: url('CircularStd-Book.woff2') format('woff2'), url('CircularStd-Book.woff') format('woff');
-                font-weight: normal;
-                font-style: normal;
-                font-display: swap;
+                font-family: "Girdo Black";
+                src: url("https://db.onlinewebfonts.com/t/8f99df3b140b4b98bb4b3963cc850c64.eot");
+                src: url("https://db.onlinewebfonts.com/t/8f99df3b140b4b98bb4b3963cc850c64.eot?#iefix")format("embedded-opentype"), url("https://db.onlinewebfonts.com/t/8f99df3b140b4b98bb4b3963cc850c64.woff2")format("woff2"), url("https://db.onlinewebfonts.com/t/8f99df3b140b4b98bb4b3963cc850c64.woff")format("woff"), url("https://db.onlinewebfonts.com/t/8f99df3b140b4b98bb4b3963cc850c64.ttf")format("truetype"), url("https://db.onlinewebfonts.com/t/8f99df3b140b4b98bb4b3963cc850c64.svg#Girdo Black")format("svg");
             }
             
             @keyframes fadeBackground {
@@ -127,17 +109,18 @@
             
             h2 {
                 font-size: 2.8rem;
+                      z-index: 999 !important; 
             }
             
             h1,
             h2 {
-                font-family: 'Girdo';
+                font-family: "Girdo Black";
                 color: #733015;
                 text-align: center;
             }
             
             p {
-                font-family: 'Circular Std', sans-serif;
+                font-family: "Circular Std Book";
                 color: #f4f4f4;
                 line-height: 25px;
                 max-width: 420px;
@@ -214,7 +197,7 @@
                     text-align: center;
                     opacity: 0;
                     animation: dissolve 500ms linear;
-                    animation-delay: 3000ms;
+                    animation-delay: 1000ms;
                     animation-fill-mode: forwards;
                     &.fadeIn {
                         animation: close 500ms linear;
@@ -225,7 +208,7 @@
             
             .boot-heen,
             .boot-terug,
-            .ivoorkust {
+            .ivoorkust, .introOutro {
                 animation: dissolve 800ms linear;
             }
             
@@ -267,6 +250,10 @@
                         opacity: 0;
                     }
                 }
+            }
+            
+            .bootImg {
+                object-fit: cover;
             }
             
             .hoverText {
@@ -361,23 +348,27 @@
                 }
             }
             
-            .modalVideo {
-                width: 95vw;
-                height: 95vh;
+             .modalVideo {
+                position: fixed;
+                top: 0;
+                left: 0;
+                width: 100vw;
+                height: 100vh;
+                overflow: hidden;
                 outline: none;
                 video {
-                    border: none;
-                    margin: 0;
-                    padding: 0;
                     position: absolute;
-                    z-index: 1;
-                    bottom: 0;
-                    left: 0;
-                    width: 100%;
+                    top: 50%;
+                    left: 50%;
+                    width: auto;
                     height: auto;
-                    max-width: 100%;
+                    min-width: 100%;
+                    min-height: 100%;
+                    transform: translate(-50%, -50%);
                     object-fit: cover;
                     margin: 0;
+                    padding: 0;
+                    border: none;
                 }
                 .kruisje {
                     left: 95%;
@@ -484,6 +475,18 @@
                 filter: url("#squiggly-0");
                 animation: squiggly-anim 0.8s linear infinite;
             }
+
+   .backButton {
+                position: absolute;
+                top: 10px;
+                left: 10px;
+                cursor: pointer;
+                z-index: 1000;
+                border: none;
+                object-fit: cover;
+                width: 50px;
+            }
+            
             
             @media (max-width: 1250px) {
                 .introOutro h1 {
